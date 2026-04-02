@@ -210,6 +210,9 @@ footer p{
         margin-top: 20px;
         margin-left: 40px;
     }
+    footer{
+        display: none;
+    }
 }
 
 /* add media query for medium device */
