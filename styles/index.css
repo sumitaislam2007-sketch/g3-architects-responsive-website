@@ -148,7 +148,33 @@ main > section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
-
+/* feature you will enjoy section style */
+.architect{
+    gap: 50px;
+}
+#architect-header{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.architect-card{
+    padding: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 450px;
+}
+.architect-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.badge{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.badge-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
 /* add media query for small device */
 @media screen and  (max-width: 576px) {
     .navbar,
