@@ -19,6 +19,12 @@ header > div, main, footer{
 .dark2{
     color: rgba(66, 66, 66, 1);
 }
+.dark3{
+    color: rgba(114, 114, 114, 1);
+}
+.orange{
+    color: #FF900E;
+}
 .border{
     border: 2px solid skyblue;
 }
@@ -36,6 +42,10 @@ header > div, main, footer{
 .max-width{
     max-width: 540px;
 }
+.margin-tb{
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
 
 /* header style */
 header{
@@ -52,7 +62,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .header-content{
     text-align: center;
@@ -65,4 +75,39 @@ header{
     max-width: 1100px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+/* architect teams style */
+main > section{
+    margin-top: 100px;
+}
+.architect-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.architect-content{
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add media query for small device */
+@media screen and (max-width: 575px) {
+    .navbar,
+    .architect-section{
+        flex-direction: column;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    .architect-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .architect-img-container img{
+        width: 100%;
+    }
+    .architect-content,
+    .architect-img-container{
+        margin: 20px 10px;
+    }
 }
