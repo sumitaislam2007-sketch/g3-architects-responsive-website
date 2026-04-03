@@ -157,7 +157,8 @@ main>section {
 @media screen and (max-width: 575px) {
 
     .navbar,
-    .architect-section {
+    .architect-section,
+    .feature-section{
         flex-direction: column;
     }
 
@@ -169,12 +170,17 @@ main>section {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .architect-img-container img {
+    .architect-img-container img,
+    .feature-content,
+    .feature-img{
         width: 100%;
     }
 
     .architect-content,
     .architect-img-container {
         margin: 20px 10px;
+    }
+    .badge{
+        margin-top: 20px;
     }
 }
